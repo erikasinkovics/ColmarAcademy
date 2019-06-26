@@ -1,7 +1,6 @@
 /* Universal Styles */
 
 
-
 html {
   font-family: "Avenir", sans-serif;
   font-size: 16px;
@@ -28,7 +27,7 @@ html {
 
 @media only screen and (max-width: 550px) {
   .main-content {
-    top: 2rem;
+    top: 0rem;
   }
 }
 
@@ -206,25 +205,26 @@ header img {
   display: flex;
   flex-direction: column;
   background-color: rgb(239,239,239);
-  align-items: center;
+  align-content: left;
 }
 
 .learn-something {
   padding: 0rem 1rem 2rem 1rem;
+
 }
 
 .start-here img {
   width: 100%;
+  height: 100%;
   margin: 0;
 }
 
 
 .button {
   background-color: rgb(155,155,155);
-  padding: 1rem 1rem;
+  padding: 1rem 0rem 1rem 0rem;
   width: 100%;
   font-size: 0.8rem;
-  margin: 1.5rem, 1rem 2rem 1rem;
   text-align: center;
 }
 
@@ -447,8 +447,9 @@ header img {
 }
 
 .thesis-exhibit-title {
-  margin: 2rem 0 2rem 0; 
+  margin: 2rem 0rem 2rem 0; 
   text-align: center;
+  width: 100%;
 }
 
 .thesis-exhibit-details {
@@ -545,7 +546,7 @@ header img {
 /* Footer */
 
 footer {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 0rem 2rem 0rem;
   border-top: solid 1px #cfcfcf;
   width: 100%;
 }
@@ -558,15 +559,16 @@ footer .content {
 }
 
 footer nav ul {
-  display: flex;  
-}
-
-footer nav li {
-  padding left: .75rem;
+  display: flex;
+  align-content: right;  
 }
 
 footer .copyright {
   flex-grow: 1;
+}
+
+footer nav a {
+  padding-right: 1.5rem;
 }
 
 
