@@ -1,8 +1,6 @@
 /* Universal Styles */
 
-div {
-  border: solid 1px red;
-}
+
 
 html {
   font-family: "Avenir", sans-serif;
@@ -48,8 +46,8 @@ h2 {
 }
 
 h4 {
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: 900;
+  font-size: 1.125rem;
   margin-bottom: .5rem;
   
 }
@@ -79,7 +77,6 @@ header {
   width: 100%;
   border-bottom: solid 1px #3C3C3C;
   background-color: white;
- 
   
 }
 
@@ -87,20 +84,30 @@ header .content {
   display: flex;
   align-items: center;
   padding: 0.5rem 1.5rem;
-  vertical-align: middle;
 
 }
 
-header span .content {
+header span {
   line-height: 2rem;
+  font-size: 1rem;
+  color: #3C3C3C;
+
 }
+
+header span strong {
+  font-weight: bold;
+}
+
 
 header .logo {
   flex: 1;
+  align-self: center;
 }
+
 
 header nav ul {
   display: flex;
+
 }
 
 nav li {
@@ -108,8 +115,7 @@ nav li {
 }
 
 nav a {
-  vertical-align: bottom;
-  line-height: 1;
+  line-height: 2rem;
   font-size: 1rem;
   color: #3C3C3C;
   font-weight: normal;
@@ -121,7 +127,7 @@ header .mobile {
 }
 
 header img {
-	height: 2.5rem;
+	height: 2rem;
 }
 
 
@@ -130,31 +136,33 @@ header img {
 @media only screen and (max-width: 550px) {
   header .desktop {
     display: none;
+
+  }
+
+  #colmarlogo,
+  #colmartext {
+    display: none;
   }
 
   header .mobile {
-    display: block;
+    display: flex;
     width: 100%;
+
   }
 
   header .content {
-    padding: 0.5rem 0;
+    padding: .5rem;
+
   }
 
   header .mobile ul {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     width: 100%;
   }
 
-  header .mobile li {
-    padding: 0;
-  }
-
-
-
   
+    
 }
 
 
@@ -282,8 +290,10 @@ header img {
   display: flex;
   flex-direction: row;
   background-color: white;
-  align-items: center;
   margin: 0px 0px 2px 2px;
+  align-items: flex-start;
+  justify-content: center;
+
 }
 
 #info-card-guest {
@@ -317,6 +327,10 @@ header img {
   display: none;
 }
 
+.info-card-img-mobile {
+  display: block;
+}
+
 
 .information-main {
   display: none;
@@ -335,10 +349,10 @@ header img {
 .info-card {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  align-items: center;
+  align-items: right;
   margin: 0px 0px 2px 2px;
   padding: 1rem;
+  background-color: #F3F5F5;
 }
 
 .info-card img {
@@ -347,7 +361,7 @@ header img {
 }
 
 #info-card-guest {
-  background-color: white;
+  background-color: #F3F5F5;
 }
 
 }
