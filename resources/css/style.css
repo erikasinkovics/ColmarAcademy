@@ -10,7 +10,7 @@ html {
 
 .main-content {
   position: relative;
-  top: 2rem; /* To offset for fixed header. */
+  top: 2rem;
 }
 
 .center {
@@ -83,12 +83,12 @@ header {
 header .content {
   display: flex;
   align-items: center;
-  padding: 0.5rem 1.5rem;
+  padding: 0rem 1.5rem  0rem 1.5rem;
 
 }
 
 header span {
-  line-height: 2rem;
+  line-height: 4rem;
   font-size: 1rem;
   color: #3C3C3C;
 
@@ -147,26 +147,29 @@ header img {
   header .mobile {
     display: flex;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 
   }
 
   header .content {
-    padding: .5rem;
+    padding: 0 .5rem 0 .5rem;
+    height: 4rem;
 
   }
 
   header .mobile ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
   }
 
-  
-    
+  header .mobile a {
+    align-items: center;
+    vertical-align: middle;
+  }
 }
-
-
-
 
 
 
@@ -282,7 +285,6 @@ header img {
 .info-details {
   width: 40%;
   display: flex;
-  /*flex-wrap: wrap;*/
   flex-direction: column;
 }
 
@@ -291,8 +293,7 @@ header img {
   flex-direction: row;
   background-color: white;
   margin: 0px 0px 2px 2px;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
 
 }
 
@@ -306,6 +307,7 @@ header img {
 }
 
 .info-card img {
+  display: inline-block;
   width: 100%;
 }
 
@@ -315,7 +317,8 @@ header img {
 
 .info-text {
   width: 65%; 
-  padding: 1rem;   
+  height: auto;
+  padding: 1rem;
 }
 
 
